@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      font-family: sans-serif;
+      color:#888;
+    }
+    .container {
+      width:800px;
+      margin:50px auto;
+    }
+    h1,h2 {
+      color:#B1009A;
+      font:26px/30px 'Open Sans', sans-serif;
+      margin: 30px 0 10px 0;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-weight: normal;
+      font-size:18px;
+    }
+    p {
+      font-size:14px;
+      line-height: 17px;
+      margin:10px 0;
+      padding: 0;
+    }
+    .note {
+      color:#aaa;
+      font-style: italic;
+    }
+    .green {
+      color:#0c8520;
+    }
+    .red {
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <div class='container'>
+<h1>Girls Learning <span class='green'>Python<span></h1>
+
+<h2 class='note'>Equipment for the workshop</h2>
+<ul>
+  <li class='note'>Electrical tape/similar for the maze on the ground</li>
+  <li class='note'>Raspberry PIs with Minecraft/python scripts installed + two monitors</li>
+</ul>
+
+<h2>Setup Time</h2>
+<p>Let's have some time to setup. We will have VM so each student will have the exact same thing. Prior software required: VirtualBox (free)</p>
+
+
+<h2>Introduction</h2>
+<h3>What is Python?</h3>
+<p>Python is a <em>programming</em> language.</p>
+<h3>What is programming?</h3>
+<ul>
+  <li>Using a programming language to create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
+  <li>Programming is everywhere (your computer right in front of you, the games you like to play, even your fridge! robots, space, etc)</li>
+<li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
+<li>Google uses python to make your searches fast</li>
+<li>Movies like Finding Nemo have python code to help make the movie</li>
+</ul>
+** read aloud thing
+
+<h2>Algorithms ** use a different word?</h2>
+<p>Programming means to make instructions for a computer to follow.</p>
+<p>Computers are not exactly "smart" like us, so we need to be very specific</p>
+<p>For example, what will happen if I tell a computer to 'make a flower'. What is a flower to a computer? What colour? And so on...</p>
+<p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
+
+<h3>Chris, the computer.</h3>
+<p class='note'>Chris is at the back blind folded</p>
+<p>If Chris is a computer, then he can't exactly see. So we need to tell him exactly what to do!</p>
+<p class='note'>Goal here is to get a few girls to shout out an instruction. Rebecca does the first one... Start each instruction with 'Chris, please do ___'. Chris moves exactly as someone says.</p>
+
+<h3>Now let's all try it</h3>
+<p class='note'>Split all girls into three groups 22/3 ~ 7 girls per group. Stand in a line (as best as possible) at the back.</p>
+<p>Cover your eyes. You will just listen for instructions!</p>
+<p>Your teammates will help you through the maze. Listen for your name to get through!</p>
+<p class='note'>Do enough so most girls get to go. Let's do this for 10-15mins.</p>
+
+<h4>You have now run an algorithm!</h4>
+
+<h2>Turtles and Functions</h2>
+<p>Let's play with some turtles and tell them what to do</p>
+<p class='note'>Show a demo of a turtle walking around with text showing what function was run. Move up, down, right, left, spinning.</p>
+<p>Let's take a look at the code to do this</p>
+<p class='note'>Show the code that was executed to run this. Pretty easy right?</p>
+<p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
+
+<h3>Functions</h3>
+<p>What is a function?</p>
+<p>A function is an <strong>action</strong> that takes <strong>input</strong> and gives you <strong>output</strong>.</p>
+<p>Sometimes <strong>input</strong> and <strong>output</strong> could be nothing.</p>
+
+<p class='note'>An image here with INPUT > (box) > OUTPUT</p>
+<p>Using a function in Python looks like this:</p>
+<p class='code'>my_cool_function(INPUT)</p>
+<p>The OUTPUT is then sometimes nothing, a number, a word, or an action on something.</p>
+
+<p>For turtles, what kind of <strong>actions</strong> did you see?</p>
+<p class='note'>Get a couple of volunteers to answer things like: moving, go up, go down, spin.</p>
+
+<h4>In Python, we can use actions in two ways:</h4>
+<p>Making the action happen on something (eg. a cute turtle):</p>
+<p class='code'>turtle.moveUp();</p>
+
+<p>What does this function do?</p>
+<p class='code'>times_two(2)</p>
+<p class='code'>4</p>
+<p>What is the input and output here?</p>
+<p class='note'>Input is 2, output is 4</p>
+<p>It takes the INPUT (the number two) and multiplies it by two. The OUTPUT is 4.</p>
+
+<h4>Making our turtles move</h4>
+<p>We can tell our turtles to move around with these actions</p>
+<p class='note'>Slides that actually do the action in impress.js.</p>
+<h4>Actions for Turtles</h4>
+<p class='code'>turtle.foreward(10)</p>
+<p class='code'>turtle.backward(5)</p>
+<p class='code'>turtle.right(15)</p>
+<p class='code'>turtle.left(1)</p>
+<h4>Try it out!</h4>
+<p class='note'>Should we have an advanced one where we make a maze and the students need to write the code for it to stay within the maze?</p>
+
+<p class='instruction'>Open up the file my_turtle.py *** INeractive instead</p>
+<p class='instruction'>Where it says, write some instructions/commands for your own turtle.</p>
+
+<p class='note'>If time, get a couple girls to show their cool turtles</p>
+
+<h2>Break time</h2>
+<p>Let's have a snack to recharge</p>
+
+<h3>More cool stuff with Python!</h3>
+<p class='note'>Show a demo of raspberry pi minecraft with python</p>
+<p>Shows how python is telling the character you normally play to do things automatically</p>
+
+<h2>------------ Chris' Memory Game Content -------------------</h2>
+
+<h2>LUNCH 13:00?</h2>
+<p class='note'>This is while everyone is mostly done and ready to go.</p>
+
+<h2>Decision Making</h2>
+<p>The key part to many things in life and in programming are the decisions we make.</p>
+
+<p>With computers, there is a <strong>condition</strong> and there are different things we do</p>
+<p>For example:</p>
+
+<p>if you are finished dinner:<br>
+&nbsp;&nbsp;you can have dessert<br>
+else:<br>
+&nbsp;&nbsp;you need to finish your dinner first</p>
+
+<p>if you have taken off your shoes:<br>
+&nbsp;&nbsp;you can enter the house<br>
+else:<br>
+&nbsp;&nbsp;please take off your shoes!</p>
+
+<p>The <strong>condition</strong> would be "you are finished dinner" which could be "yes" or "no", which in computer-speak is called <strong class='green'>TRUE</strong> and <strong class='red'>FALSE</strong>. 
+
+<p>if an apple is brown:<br>
+&nbsp;&nbsp;don't eat it!<br>
+else:<br>
+&nbsp;&nbsp;eat it!</p>
+
+<h4>For a computer with Python</h4>
+<p>The <strong>variable</strong> apple stores which colour it is.</p>
+
+<p>if apple == "brown":<br>
+&nbsp;&nbsp;print "Don't eat it!"<br>
+else:<br>
+&nbsp;&nbsp;print "Eat it!"</p>
+<p>What would happen if</p>
+<p class='code'>apple = "green"</p>
+<p class='code'>apple = "brown"</p>
+
+<p>Remember that one equals sign (=) means to <em>give a value to a variable</em>. Two equals signs (==) means <em>we are checking if the two things are the same</em></p>
+
+<h3>Stand up if....</h3>
+<p>Stand up if the <strong>condition</strong> about you is <strong>TRUE</strong></p>
+
+<h2>Let's use everything we've learned</h2>
+<p class='note'>Recap slide</p>
+<p>What did we learn today?</p>
+<p>Variables</p>
+<p>Functions</p>
+<p>Strings</p>
+<p>Print</p>
+<p>Algorithm</p>
+<p>If and Else</p>
+
+<h2>BREAK</h2>
+<p>Talk to your neighbour about what we've learned today!</p>
+<p>Can you think of other places where programming is used?</p>
+<p>Do your parents use 'if'?</p>
+
+
+</div>
+</body>
+</html>
