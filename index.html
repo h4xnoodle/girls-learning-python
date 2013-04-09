@@ -1,90 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    * {
-      font-family: sans-serif;
-      color:#888;
-    }
-    .container {
-      width:800px;
-      margin:50px auto;
-    }
-    h1,h2 {
-      color:#B1009A;
-      font:26px/30px 'Open Sans', sans-serif;
-      margin: 30px 0 10px 0;
-    }
-    h2 {
-      font-size: 20px;
-    }
-    h3 {
-      font-weight: normal;
-      font-size:18px;
-    }
-    p {
-      font-size:14px;
-      line-height: 17px;
-      margin:10px 0;
-      padding: 0;
-    }
-    .note {
-      color:#aaa;
-      font-style: italic;
-    }
-    .green {
-      color:#0c8520;
-    }
-    .red {
-      color:red;
-    }
-  </style>
+  <title>Girls Learning Code - Python</title>
+  <meta name="viewport" content="width=1024" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link rel='stylesheet' href='assets/style.css' type='style/css' media='screen' />  
 </head>
 <body>
-  <div class='container'>
-<h1>Girls Learning <span class='green'>Python<span></h1>
+  <div id='impress'>
 
-<h2 class='note'>Equipment for the workshop</h2>
-<ul>
-  <li class='note'>Electrical tape/similar for the maze on the ground</li>
-  <li class='note'>Raspberry PIs with Minecraft/python scripts installed + two monitors</li>
-</ul>
+    <div id='intro-1' class='step slide title' data-x='-1300' data-y='-1800'>
+      <h1>Girls Learning Code</h1>
+      <h2>Python</h2>
+    </div>
 
-<h2>Setup Time</h2>
-<p>Let's have some time to setup. We will have VM so each student will have the exact same thing. Prior software required: VirtualBox (free)</p>
+    <div id='intro-2' class='step slide' data-x='0' data-y='-1800'>
+      <h2>Introduction</h2>
+      <h3>What is Python?</h3>
+      <p>Python is a <em>programming</em> language.</p>
+    </div>
 
+    <div id='intro-3' class='step slide' data-x='-100' data-y='-1200' data-z='40' data-rotate='90'>
+    <h3>What is programming?</h3>
+      <ul>
+        <li>Using a programming language to create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
+        <li>Programming is everywhere (your computer right in front of you, the games you like to play, even your fridge! robots, space, etc)</li>
+        <li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
+        <li>Google uses python to make your searches fast</li>
+        <li>Movies like Finding Nemo have python code to help make the movie</li>
+      </ul>
+    </div>
 
-<h2>Introduction</h2>
-<h3>What is Python?</h3>
-<p>Python is a <em>programming</em> language.</p>
-<h3>What is programming?</h3>
-<ul>
-  <li>Using a programming language to create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
-  <li>Programming is everywhere (your computer right in front of you, the games you like to play, even your fridge! robots, space, etc)</li>
-<li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
-<li>Google uses python to make your searches fast</li>
-<li>Movies like Finding Nemo have python code to help make the movie</li>
-</ul>
-** read aloud thing
+<!-- Algorithms -->
 
-<h2>Algorithms ** use a different word?</h2>
-<p>Programming means to make instructions for a computer to follow.</p>
-<p>Computers are not exactly "smart" like us, so we need to be very specific</p>
-<p>For example, what will happen if I tell a computer to 'make a flower'. What is a flower to a computer? What colour? And so on...</p>
-<p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
+    <div id='algorithms' class='step slide' data-x='-100' data-y='0'>
+      <h2>Algorithms</h2>
+      <p><em>A big fancy word for a 'procedure' or 'set of steps'</em></p>
+      <p>Programming means to make instructions for a computer to follow.</p>
+      <p>Computers are not exactly "smart" like us, so we need to be very specific.</p>
+    </div>
 
-<h3>Chris, the computer.</h3>
-<p class='note'>Chris is at the back blind folded</p>
-<p>If Chris is a computer, then he can't exactly see. So we need to tell him exactly what to do!</p>
-<p class='note'>Goal here is to get a few girls to shout out an instruction. Rebecca does the first one... Start each instruction with 'Chris, please do ___'. Chris moves exactly as someone says.</p>
+    <div id='algos-2' class='step slide' data-x='-100' data-y='200'>
+      <p>For example, what will happen if I tell a computer to 'make a flower'.</p>
+      <p>What is a flower to a computer? What colour? And so on...</p>
+      <p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
+    </div>
 
-<h3>Now let's all try it</h3>
-<p class='note'>Split all girls into three groups 22/3 ~ 7 girls per group. Stand in a line (as best as possible) at the back.</p>
-<p>Cover your eyes. You will just listen for instructions!</p>
-<p>Your teammates will help you through the maze. Listen for your name to get through!</p>
-<p class='note'>Do enough so most girls get to go. Let's do this for 10-15mins.</p>
+    <div id='algos-3' class='step' data-x='-1300' data-y='-500'>
+      <h3>Chris, the computer.</h3>
+      <p>If Chris is a computer, then he can't exactly see. So we need to tell him exactly what to do!</p>
+      <p>"Chris, please walk forward by 5 small steps."</p>
+    </div>
 
-<h4>You have now run an algorithm!</h4>
+    <div id='algos-4' class='step' data-x='300' data-y='-500'>
+      <h3>Now let's all try it</h3>
+      <p>Cover your eyes. You will just listen for instructions!</p>
+      <p>Your teammates will help you through the maze. Listen for your name to get through!</p>
+      <h4>You have now run an algorithm!</h4>
+    </div>
+
+<!-- Functions -->
 
 <h2>Turtles and Functions</h2>
 <p>Let's play with some turtles and tell them what to do</p>
@@ -201,5 +176,9 @@ else:<br>
 
 
 </div>
+
+<script src="assets/impress.js"></script>
+<script>impress().init();</script>
+
 </body>
 </html>
