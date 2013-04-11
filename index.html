@@ -3,7 +3,7 @@
 <head>
   <title>Girls Learning Code - Python</title>
   <meta name="viewport" content="width=1024" />
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Mono' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='assets/style.css' type='style/css' media='screen' />  
 </head>
 <body>
@@ -41,8 +41,8 @@
     </div>
 
     <div id='algos-2' class='step slide' data-x='-100' data-y='200'>
-      <p>For example, what will happen if I tell a computer to 'make a flower'.</p>
-      <p>What is a flower to a computer? What colour? And so on...</p>
+      <p>For example, what will happen if I tell a computer to 'make a sandwich'.</p>
+      <p>What is a sandwich to a computer? What is bread? And so on...</p>
       <p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
     </div>
 
@@ -59,123 +59,174 @@
       <h4>You have now run an algorithm!</h4>
     </div>
 
+
 <!-- Functions -->
 
-<h2>Turtles and Functions</h2>
-<p>Let's play with some turtles and tell them what to do</p>
-<p class='note'>Show a demo of a turtle walking around with text showing what function was run. Move up, down, right, left, spinning.</p>
-<p>Let's take a look at the code to do this</p>
-<p class='note'>Show the code that was executed to run this. Pretty easy right?</p>
-<p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
+  <div id='turtles' class='step' data-x='1000' data-y='-1400'>
+    <h2>Turtles</h2>
+    <img src='assets/turtle.jpg' alt='Turtle' title='Turtle' />
+    <p>Let's play with some turtles</p>
+    <p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
+  </div>
 
-<h3>Functions</h3>
-<p>What is a function?</p>
-<p>A function is an <strong>action</strong> that takes <strong>input</strong> and gives you <strong>output</strong>.</p>
-<p>Sometimes <strong>input</strong> and <strong>output</strong> could be nothing.</p>
+  <div step='turtles-eg' class='step' data-x='1000' data-y='-1000'>
+    <h2>Placeholder for visual examples. Need to make them :)</h2>
+  </div>
 
-<p class='note'>An image here with INPUT > (box) > OUTPUT</p>
-<p>Using a function in Python looks like this:</p>
-<p class='code'>my_cool_function(INPUT)</p>
-<p>The OUTPUT is then sometimes nothing, a number, a word, or an action on something.</p>
+  <div id='functions' class='step' data-x='1700' data-y='-1100' data-rotate='90'>
+    <h3>Functions</h3>
+    <p>What is a function?</p>
+    <p>A function is an <strong>action</strong> that takes <strong>input</strong> and gives you <strong>output</strong>.</p>
+    <p>Sometimes <strong>input</strong> and <strong>output</strong> could be nothing!</p>
+  </div>
 
-<p>For turtles, what kind of <strong>actions</strong> did you see?</p>
-<p class='note'>Get a couple of volunteers to answer things like: moving, go up, go down, spin.</p>
+  <div id='functions-2' class='step' data-x='2000' data-y='-1100' data-rotate='90'>
+    <p>Using a function in Python looks like this:</p>
+    <p class='code'>my_cool_function(<strong>INPUT</strong>)</p>
+    <p>The <strong>OUTPUT</strong> is sometimes nothing, a number, a word, or an action on something.</p>
+  </div>
 
-<h4>In Python, we can use actions in two ways:</h4>
-<p>Making the action happen on something (eg. a cute turtle):</p>
-<p class='code'>turtle.moveUp();</p>
+  <div id='functions-3' class='step' data-x='1870' data-y='-1100' data-rotate='90' data-z='100'>
+    <p class='question'>For turtles, what kind of <strong>actions</strong> did you see?</p>
+  </div>
 
-<p>What does this function do?</p>
-<p class='code'>times_two(2)</p>
-<p class='code'>4</p>
-<p>What is the input and output here?</p>
-<p class='note'>Input is 2, output is 4</p>
-<p>It takes the INPUT (the number two) and multiplies it by two. The OUTPUT is 4.</p>
+  <div id='functions-4' class='step' data-x='1900' data-y='-500'>
+    <h4>In Python, we can use actions in two ways:</h4>
+    <p>Making the action happen on something (eg. a cute turtle):</p>
+    <p class='code'>turtle.forward();</p>
+    <img src='assets/turtle.jpg' />
+    <div class='line'></div>
+  </div>
 
-<h4>Making our turtles move</h4>
-<p>We can tell our turtles to move around with these actions</p>
-<p class='note'>Slides that actually do the action in impress.js.</p>
-<h4>Actions for Turtles</h4>
-<p class='code'>turtle.foreward(10)</p>
-<p class='code'>turtle.backward(5)</p>
-<p class='code'>turtle.right(15)</p>
-<p class='code'>turtle.left(1)</p>
-<h4>Try it out!</h4>
-<p class='note'>Should we have an advanced one where we make a maze and the students need to write the code for it to stay within the maze?</p>
+  <div id='functions-5' class='step' data-x='1900' data-y='100'>
+    <p>What does this function do?</p>
+    <p class='code'>times_two(2)</p>
+    <p class='code'>&gt;&gt;&gt; 4</p>
+    <p>What is the input and output here?</p>
+    <p class='note'>Input is 2, output is 4</p>
+    <p>It takes the <strong>INPUT</strong> (the number two) and multiplies it by two. The <strong>OUTPUT</strong> is 4.</p>
+  </div>
 
-<p class='instruction'>Open up the file my_turtle.py *** INeractive instead</p>
-<p class='instruction'>Where it says, write some instructions/commands for your own turtle.</p>
+  <div id='functions-6' class='step' data-x='1900' data-y='500'>
+    <h4>Making our turtles move</h4>
+    <p>We can tell our turtles to move around with these actions</p>
+    <h4>Actions for Turtles</h4>
+  </div>
 
-<p class='note'>If time, get a couple girls to show their cool turtles</p>
+<!--   <p class='code'>turtle.forward(10)</p>
+  <p class='code'>turtle.backward(5)</p>
+  <p class='code'>turtle.right(15)</p>
+  <p class='code'>turtle.left(1)</p> -->
 
-<h2>Break time</h2>
-<p>Let's have a snack to recharge</p>
+  <div id='functions-exercise' class='step' data-x='1900' data-y='1000'>
+    <h4>Try it out!</h4>
+    <p class='instruction'>Double click 'turtles.py' on your blue desktop.</p>
+    <p class='instruction'>When you see ">>>", enter in a turtle action:</p>
+    <p>Examples:</p>
+    <p class='code'>turtle.forward(10)</p>
+    <p class='small'>Move foward 10 steps</p>
+    <p class='code'>turtle.backward(5)</p>
+    <p class='small'>Move back 5 steps</p>
+    <p class='code'>turtle.right(90)</p>
+    <p class='small'>Rotate clockwiese by 90 degrees</p>
+    <p class='code'>turtle.left(90)</p>
+    <p class='small'>Rotate counter-clockwise by 90 degrees</p>
+  </div>
 
-<h3>More cool stuff with Python!</h3>
-<p class='note'>Show a demo of raspberry pi minecraft with python</p>
-<p>Shows how python is telling the character you normally play to do things automatically</p>
+  <div id='break' class='step break' data-x='1200' data-y='1000' data-rotate='90'>
+    <h2>Break time</h2>
+    <p>Let's have a snack to recharge :)</p>
+    <img src='assets/snacks.jpg' />
+  </div>
 
-<h2>------------ Chris' Memory Game Content -------------------</h2>
+  <div id='memory' class='step' data-x='2000' data-y='-2000'>
+    <p>Placeholder for Chris' content.</p>
+  </div>
 
-<h2>LUNCH 13:00?</h2>
-<p class='note'>This is while everyone is mostly done and ready to go.</p>
+  <!-- CHRIS' MEMORY GAME -->
 
-<h2>Decision Making</h2>
-<p>The key part to many things in life and in programming are the decisions we make.</p>
+  <div id='lunch' class='step break' data-x='2000' data-y='-1800'>
+    <h2>LUNCH</h2>
+  </div>
 
-<p>With computers, there is a <strong>condition</strong> and there are different things we do</p>
-<p>For example:</p>
+  <div id='control-flow' class='step' data-x='2800' data-y='-1800'>
+    <h2>Decision Making</h2>
+    <p>The key part to many things in life and in programming are the decisions we make.</p>
+    <p>With computers, there is a <strong class='condition'>condition</strong> and there are different things we do</p>
+  </div>
 
-<p>if you are finished dinner:<br>
-&nbsp;&nbsp;you can have dessert<br>
-else:<br>
-&nbsp;&nbsp;you need to finish your dinner first</p>
+  <div id='control-flow-2' class='step' data-x='2800' data-y='-1300'>
+    <p class='control'>if <span class='condition'>you are finished dinner</span>:<br>
+    &nbsp;&nbsp;<span class='decision'>you can have dessert</span><br>
+    else:<br>
+    &nbsp;&nbsp;<span class='decision'>you need to finish your dinner first</span></p>
+  </div>
 
-<p>if you have taken off your shoes:<br>
-&nbsp;&nbsp;you can enter the house<br>
-else:<br>
-&nbsp;&nbsp;please take off your shoes!</p>
+  <div id='control-flow-3' class='step' data-x='2800' data-y='-800'>
+    <p>if <span class='control-condition'>you have taken off your shoes</span>:<br>
+    &nbsp;&nbsp;<span class='decision'>you can enter the house</span><br>
+    else:<br>
+    &nbsp;&nbsp;<span class='decision'>please take off your shoes!</span></p>
+  </div>
 
-<p>The <strong>condition</strong> would be "you are finished dinner" which could be "yes" or "no", which in computer-speak is called <strong class='green'>TRUE</strong> and <strong class='red'>FALSE</strong>. 
+  <div id='control-flow-4' class='step' data-x='2800' data-y='-400'>
+    <p>The <strong class='condition'>condition</strong> would be "<span class='condition'>you are finished dinner</span>" which could be "yes" or "no", which in computer-speak is called <strong class='green'>TRUE</strong> and <strong class='red'>FALSE</strong>. 
 
-<p>if an apple is brown:<br>
-&nbsp;&nbsp;don't eat it!<br>
-else:<br>
-&nbsp;&nbsp;eat it!</p>
+    <p class='control'>if <span class='condition'>an apple is brown</span>:<br>
+    &nbsp;&nbsp;<span class='result'>don't eat it!</span><br>
+    else:<br>
+    &nbsp;&nbsp;<span class='result'>eat it!</span></p>
+  </div>
 
-<h4>For a computer with Python</h4>
-<p>The <strong>variable</strong> apple stores which colour it is.</p>
+  <div id='control-flow-5' class='step' data-x='2800' data-y='0'>
+    <h4>For a computer with Python</h4>
+    <p>The <strong>variable</strong> apple stores which colour it is.</p>
+    <p>if apple == "brown":<br>
+    &nbsp;&nbsp;print "Don't eat it!"<br>
+    else:<br>
+    &nbsp;&nbsp;print "Eat it!"</p>
+    <p>What would happen if</p>
+    <p class='code'>apple = "green"</p>
+    <p class='code'>apple = "brown"</p>
+  </div>
 
-<p>if apple == "brown":<br>
-&nbsp;&nbsp;print "Don't eat it!"<br>
-else:<br>
-&nbsp;&nbsp;print "Eat it!"</p>
-<p>What would happen if</p>
-<p class='code'>apple = "green"</p>
-<p class='code'>apple = "brown"</p>
+  <div id='control-flow-6' class='step important' data-x='2800' data-y='400'>
+    <p>Spacing is important in Python! We use two spaces to tell the difference between "if" and the decision we made.</p>
+    <p>Remember that one equals sign (=) means to <em>give a value to a variable</em>. Two equals signs (==) means <em>we are checking if the two things are the same</em></p>
+  </div>
 
-<p>Remember that one equals sign (=) means to <em>give a value to a variable</em>. Two equals signs (==) means <em>we are checking if the two things are the same</em></p>
+  <div id='control-flow-game' class='step' data-x='3000' data-y='400' data-rotate='90' data-z='1000'>
+    <h3>Stand up if....</h3>
+    <p>Stand up if the <strong>condition</strong> about you is <strong>TRUE</strong></p>
+  </div>
 
-<h3>Stand up if....</h3>
-<p>Stand up if the <strong>condition</strong> about you is <strong>TRUE</strong></p>
+  <div id='recap' class='step' data-x='2800' data-y='800'>
+    <h2>Let's use everything we've learned</h2>
+    <p>What did we learn today?</p>
+    <p>Variables</p>
+    <p>Functions</p>
+    <p>Strings</p>
+    <p>Print</p>
+    <p>Algorithm</p>
+    <p>If and Else</p>
+  </div>
 
-<h2>Let's use everything we've learned</h2>
-<p class='note'>Recap slide</p>
-<p>What did we learn today?</p>
-<p>Variables</p>
-<p>Functions</p>
-<p>Strings</p>
-<p>Print</p>
-<p>Algorithm</p>
-<p>If and Else</p>
+  <div id='grid' class='step' data-x='2800' data-y='1300'>
+    <p>Game involving control flow. Likely to do with a grid of coloured blocks, and the students will change the colours conditionally to make a picture :)</p>
+    <p>This will bring us to the end.</p>
+    <p>Following the end of the class we will give more demos of the RaspberryPi minecraft. and if time permits, the students can play :)
+  </div>
 
-<h2>BREAK</h2>
-<p>Talk to your neighbour about what we've learned today!</p>
-<p>Can you think of other places where programming is used?</p>
-<p>Do your parents use 'if'?</p>
+  <div id='end' class='step' data-x='' data-y=''>
+  <p>Thanks for coming today!!</p>
+  <p>Want to learn more?</p>
+  <ul>
+    <li>Python Monk <a href="http://pythonmonk.com">http://pythonmonk.com</a></li>
+    <li>CodeAcademy <a href="http://codeacademy.com">http://codeacademy.com</a></li>
+  </ul>
+  </div>
 
-
-</div>
+</div>  <!-- #impress -->
 
 <script src="assets/impress.js"></script>
 <script>impress().init();</script>

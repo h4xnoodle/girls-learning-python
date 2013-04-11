@@ -64,6 +64,10 @@ table {
     transition:         opacity 1s;
 }
 
+.impress-on-overview .step {
+    opacity: 1;
+}
+
 .impress-enabled {
     .active {
         opacity: 1.0;
@@ -83,6 +87,17 @@ table {
         }
         p {
             font-size: 28px;
+            margin: 10px 0;
+            strong {
+                font-weight: 700;
+            }
+            &.code {
+                font-family: 'PT Mono', sans-serif;
+                color:#007a23;
+            }
+            &.question {
+                color:#ffaa00;
+            }
         }
         ul {
         list-style: circle;
@@ -98,6 +113,74 @@ table {
 .title  {
     text-align: center;
     h2 {
-        font:italic 55px 'georgia',serif;
+        font:normal 55px 'PT Mono',serif;
+    }
+}
+
+#turtles.step {
+    position: relative;
+    img {
+        position: absolute;
+        height:225px;
+        top: 0; right: 120px;
+    }
+    h2 {
+        margin:0 0 40px 0;
+    }
+}
+#functions-4 {
+    img, .line {
+        -webkit-transition: 0.5s;
+        -moz-transition:    0.5s;
+        -ms-transition:     0.5s;
+        -o-transition:      0.5s;
+        transition:         0.5s;
+    }
+    img {
+        height:200px;
+        display: inline-block;
+    }
+    .line {
+        z-index: -10;
+        position: relative;
+        top:-100px;
+        height:4px;
+        background: #ccc;
+        opacity: 0;
+        width:400px;
+    }
+    &.present img, &.past img {
+        -webkit-transform: translateX(400px);
+        -moz-transform: translateX(400px);
+        -ms-transform: translateX(400px);
+        -o-transform: translateX(400px);
+        transform: translateX(400px);
+        -webkit-transition-delay: 1s;
+        -moz-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        -o-transition-delay: 1s;
+        transition-delay: 1s;
+    }
+    &.present .line, &.past .line {
+        -webkit-transition-delay: 1.4s;
+        -moz-transition-delay:    1.4s;
+        -ms-transition-delay:     1.4s;
+        -o-transition-delay:      1.4s;
+        transition-delay:         1.4s;
+        opacity: 1;
+    }
+}
+#functions-exercise {
+    p.small {
+        font-size: 20px;
+        line-height: 20px;
+        margin:0 0 10px 0;
+    }
+}
+#break {
+    position: relative;
+    img {
+        position:absolute;
+        top: 20px; right:0
     }
 }

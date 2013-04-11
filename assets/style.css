@@ -141,6 +141,9 @@ table {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
+.impress-on-overview .step {
+  opacity: 1;
+}
 .impress-enabled .active {
   opacity: 1.0;
 }
@@ -158,6 +161,17 @@ table {
 }
 .impress-enabled .step p {
   font-size: 28px;
+  margin: 10px 0;
+}
+.impress-enabled .step p strong {
+  font-weight: 700;
+}
+.impress-enabled .step p.code {
+  font-family: 'PT Mono', sans-serif;
+  color: #007a23;
+}
+.impress-enabled .step p.question {
+  color: #ffaa00;
 }
 .impress-enabled .step ul {
   list-style: circle;
@@ -171,5 +185,73 @@ table {
   text-align: center;
 }
 .title h2 {
-  font: italic 55px 'georgia', serif;
+  font: normal 55px 'PT Mono', serif;
+}
+#turtles.step {
+  position: relative;
+}
+#turtles.step img {
+  position: absolute;
+  height: 225px;
+  top: 0;
+  right: 120px;
+}
+#turtles.step h2 {
+  margin: 0 0 40px 0;
+}
+#functions-4 img,
+#functions-4 .line {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#functions-4 img {
+  height: 200px;
+  display: inline-block;
+}
+#functions-4 .line {
+  z-index: -10;
+  position: relative;
+  top: -100px;
+  height: 4px;
+  background: #ccc;
+  opacity: 0;
+  width: 400px;
+}
+#functions-4.present img,
+#functions-4.past img {
+  -webkit-transform: translateX(400px);
+  -moz-transform: translateX(400px);
+  -ms-transform: translateX(400px);
+  -o-transform: translateX(400px);
+  transform: translateX(400px);
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+#functions-4.present .line,
+#functions-4.past .line {
+  -webkit-transition-delay: 1.4s;
+  -moz-transition-delay: 1.4s;
+  -ms-transition-delay: 1.4s;
+  -o-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+  opacity: 1;
+}
+#functions-exercise p.small {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+#break {
+  position: relative;
+}
+#break img {
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
