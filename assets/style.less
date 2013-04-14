@@ -115,6 +115,30 @@ table {
                 font-size: 28px;
             }
         }
+        p.instruction {
+            color:orange;
+        }
+        .control {
+            color:blue;
+        }
+        .condition {
+            color:purple;
+        }
+        .decision {
+            color:gray;
+        }
+        .important {
+            color:red;
+        }
+        a {
+            color:#B1009A;
+            text-decoration: none;
+            &:hover {
+                color:#666;
+                text-decoration: underline;
+            }
+        }
+
     }
 }
 
@@ -122,6 +146,11 @@ table {
     text-align: center;
     h2 {
         font:normal 55px 'PT Mono',serif;
+    }
+}
+#algos-3 {
+    img {
+        height:300px;
     }
 }
 
@@ -191,4 +220,17 @@ table {
         position:absolute;
         top: 20px; right:0
     }
+}
+#turtles-move {
+    &.present {
+        opacity: 1.0;
+        background: white;
+    }
+    &.past, &.future {
+        opacity: 0;
+    }
+}
+#owari {
+    width:1100px; height:400px;
+    background: url('congrats.png') top right no-repeat;
 }

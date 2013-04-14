@@ -187,11 +187,37 @@ table {
   margin: 10px 0;
   font-size: 28px;
 }
+.impress-enabled .step p.instruction {
+  color: orange;
+}
+.impress-enabled .step .control {
+  color: blue;
+}
+.impress-enabled .step .condition {
+  color: purple;
+}
+.impress-enabled .step .decision {
+  color: gray;
+}
+.impress-enabled .step .important {
+  color: red;
+}
+.impress-enabled .step a {
+  color: #B1009A;
+  text-decoration: none;
+}
+.impress-enabled .step a:hover {
+  color: #666;
+  text-decoration: underline;
+}
 .title {
   text-align: center;
 }
 .title h2 {
   font: normal 55px 'PT Mono', serif;
+}
+#algos-3 img {
+  height: 300px;
 }
 #turtles.step {
   position: relative;
@@ -260,4 +286,17 @@ table {
   position: absolute;
   top: 20px;
   right: 0;
+}
+#turtles-move.present {
+  opacity: 1.0;
+  background: white;
+}
+#turtles-move.past,
+#turtles-move.future {
+  opacity: 0;
+}
+#owari {
+  width: 1100px;
+  height: 400px;
+  background: url('congrats.png') top right no-repeat;
 }
