@@ -187,7 +187,15 @@ table {
   margin: 10px 0;
   font-size: 28px;
 }
-.impress-enabled .step p.instruction {
+.impress-enabled .step .author {
+  color: #888;
+  margin: 50px 0 0 0;
+  font: italic 26px/38px 'Georgia', serif;
+}
+.impress-enabled .step .author a {
+  color: #888;
+}
+.impress-enabled .step .instruction {
   color: orange;
 }
 .impress-enabled .step .control {

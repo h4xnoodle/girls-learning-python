@@ -55,9 +55,12 @@
 
     <div id='algos-4' class='step' data-x='300' data-y='-500'>
       <h3>Now let's all try it</h3>
-      <p>Cover your eyes. You will just listen for instructions!</p>
+      <p class='instruction'>Cover your eyes. You will just listen for instructions</p>
       <p>Your teammates will help you through the maze. Listen for your name to get through!</p>
-      <h4>You have now run an algorithm!</h4>
+      
+    </div>
+    <div id='algos-5' class='step' data-x='300' data-y='-300'>
+      <h4 class='instruction'>You have now run an algorithm!</h4>
     </div>
 
 
@@ -107,6 +110,13 @@
     <p>What is the input and output here?</p>
     <p class='note'>Input is 2, output is 4</p>
     <p>It takes the <strong>INPUT</strong> (the number two) and multiplies it by two. The <strong>OUTPUT</strong> is 4.</p>
+  </div>
+
+  <div id='functions-def' class='step' data-x='2200' data-y='-70' data-z='-400'>
+    <h4>Make a function</h4>
+    <p class='code'>def times_two(number):<br>
+      &nbsp;&nbsp;return number * 2</p>
+    <p>'return' means to give back the <strong>output</strong></p>
   </div>
 
   <div id='functions-6' class='step' data-x='1900' data-y='500'>
@@ -194,7 +204,7 @@
     &nbsp;&nbsp;<span class='decision'>print "Eat it!"</span></p>
     <p class='question  '>What would happen if the apple variable was instead:</p>
     <p class='code'>apple = "green"</p>
-    <p class='code'>apple = "brown"</p>
+    <p class='code'>apple = "purple"</p>
   </div>
 
   <div id='control-flow-6' class='step important' data-x='2800' data-y='600'>
@@ -224,17 +234,18 @@
       <span class='decision'>&nbsp;&nbsp;print count</span></p>
     <p>You can read aloud like this:</p>
     <p>For exactly 5 times, 'count' is assigned the value of the current time we are running the loop. We then print the current value of 'count'.</p> 
-    <p class='question'>What do you think this outputs?</p>
+    <p class='question'>What do you think the output is?</p>
     <p>range(5) means that 'count' will get the value of 0, then 1, then 2... then 4.</p>
   </div>
 
   <div id='loops-3' class='step' data-x='2800' data-y='2300'>
     <p>When you really want cake but you need to eat three servings of vegetables first...</p>
-    <p class='code'>times_ate_veggies = 3<br>while <span class='condition'>times_ate_veggies > 0</span><br>
+    <p class='code'>times_ate_veggies = 3<br>while <span class='condition'>times_ate_veggies &gt; 0:</span><br>
       <span class='decision'>&nbsp;&nbsp;print "Eating my vegetables..."</span><br>
       <span class='decision'>&nbsp;&nbsp;times_ate_veggies = times_ate_veggies - 1</span><br>
       print "I can have cake now!"</p>
       <p>Remember the spaces!</p>
+      <p>"&gt;" means "greater than". Example: <span class='condition'>5 > 2?</span> asks: "Is 5 greater than 2?"</p>
   </div>
 
   <div id='recap' class='step' data-x='2800' data-y='2900'>
@@ -260,6 +271,7 @@
     <p>That was just a small example. Let's make something prettier!</p>
     <p class='instruction'>Try making the grid bigger, making different colours, draw a nice picture!</p>
     <img src="assets/grid_row_col.png" />
+    <p class='instruction'>Open Coloured Blocks on your desktop</p>
   </div>
 
   <div id='owari' class='step' data-x='3800' data-y='300'>
@@ -270,6 +282,7 @@
     <li>CodeAcademy <a href="http://codeacademy.com">http://codeacademy.com</a></li>
     <li>Hacking Minecraft<br><a href='http://www.raspberrypi.org/archives/3445'>http://www.raspberrypi.org/archives/3445</a></li>
   </ul>
+  <p class='author'>Rebecca Putinski <a href="http://twitter.com/h4xnoodle">@h4xnoodle</a></p>
   </div>
 
 </div>  <!-- #impress -->
