@@ -18,34 +18,44 @@
       <h2>Introduction</h2>
       <h3>What is Python?</h3>
       <p>Python is a <em>programming</em> language.</p>
+      <p>It is easy to use, and is good for quick projects or large systems.</p>
     </div>
 
     <div id='intro-3' class='step slide' data-x='-100' data-y='-1200' data-z='40' data-rotate='90'>
-    <h3>What is programming?</h3>
-      <ul>
-        <li>Using a programming language to create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
-        <li>Programming is everywhere (your computer right in front of you, the games you like to play, even your fridge! robots, space, etc)</li>
-        <li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
-        <li>Google uses python to make your searches fast</li>
-        <li>Movies like Finding Nemo have python code to help make the movie</li>
-      </ul>
+      <h3>What is programming?</h3>
+      <p>Using a programming language to create instructions for computers to follow </p>
+      <p>"please do one plus one" => 1+1</p>
+    </div>
+
+    <div id='intro-3-split' class="step" data-x='-190' data-y='-1200' data-z='200' data-rotate='60'>
+      <p>Programming is everywhere</p>
+      <p>Your computer right in front of you, the games you like to play, even your fridge!</p>
+      <p>Robots, space, shopping, construction...</p>
+      <img src='assets/wall-e.png'/> <img src='assets/nest.png'/>
+    </div>
+
+    <div id='python-egs' data-x='-300' data-y='-1200' data-z='400' data-rotate='120' class="step">
+      <p><span style='color:green'>Python</span> is awesome because it enables programmers<br> (like yourselves!) to create programs easily and quickly. </p>
+      <p><span style='color:blue;'>G</span><span style='color:red;'>o</span><span style='color:goldenrod'>o</span><span style='color:blue;'>g</span><span style='color:green'>l</span><span style='color:red;'>e</span> uses python to make your searches fast</p>
+      <p>Movies like Finding Nemo have python code to help make the movie</p>
+      <img src='assets/nemo.jpg' style='position:absolute;top:0;right:-100px;-webkit-transform:rotate(36deg);'/>
     </div>
 
 <!-- Algorithms -->
 
     <div id='algorithms' class='step slide' data-x='-100' data-y='0'>
       <h2>Algorithms</h2>
-      <p><em>A big fancy word for a 'procedure' or 'set of steps'</em></p>
+      <p>A big fancy word for a <span style='color:green;'>'procedure'</span> or <span style='color:green;'>'set of steps'</span></p>
       <p>Programming means to make instructions for a computer to follow.</p>
       <p>Computers are not exactly "smart" like us, so we need to be very specific.</p>
     </div>
 
     <div id='algos-2' class='step slide' data-x='-100' data-y='250'>
-      <p>For example, what will happen if I tell a computer to 'make a sandwich'.</p>
+      <p>For example, what will happen if I tell a computer to<br>'make a PB&amp;J sandwich'.</p>
       <p>What is a sandwich to a computer? What is bread? And so on...</p>
-      <p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
+      <p style='color:goldenrod;'>Each 'instruction' or 'step' must be very specific for a computer to understand</p>
     </div>
-
+<!--
     <div id='algos-3' class='step' data-x='-1300' data-y='-500'>
       <h3>Chris, the computer.</h3>
       <p>If Chris is a computer, then he can't exactly see. So we need to tell him exactly what to do!</p>
@@ -62,6 +72,7 @@
     <div id='algos-5' class='step' data-x='300' data-y='-300'>
       <h4 class='instruction'>You have now run an algorithm!</h4>
     </div>
+  -->
 
 
 <!-- Functions -->
@@ -70,7 +81,8 @@
     <h2>Turtles</h2>
     <img src='assets/turtle.jpg' alt='Turtle' title='Turtle' />
     <p>Let's play with some turtles</p>
-    <p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
+    <p>We are telling the turtle <span style='color:goldenrod'>exactly</span> what to do.</p>
+    <p>She can't move on her own!</p>
   </div>
 
   <div step='turtles-eg' class='step' data-x='1000' data-y='-1000'>
@@ -104,6 +116,7 @@
   </div>
 
   <div id='functions-5' class='step' data-x='1900' data-y='100'>
+    <h4>Give us output</h4>
     <p>What does this function do?</p>
     <p class='code'>times_two(2)</p>
     <p class='code'>&gt;&gt;&gt; 4</p>
@@ -119,6 +132,31 @@
     <p>'return' means to give back the <strong>output</strong></p>
   </div>
 
+  <div id='functions-variables' class='step' data-x='2200' data-y='10' data-z='-400'>
+    <h4>Variables</h4>
+    <p>A <span style='font-style:italic'>variable</span> is used to replace a <span style='color:green'>name</span> with a <span style='color:green'>value</span>.</p>
+    <p><span style='color:green;'>number</span> was a variable for some number we want to use in the function</p>
+    <p>You can also use <span style='color:green'>"strings"</span></p>
+  </div>
+
+
+  <div id='functions-tryit' class="step" data-x='2500' data-y='-70' data-z='-400'>
+    <h4>Let's try it</h4>
+    <p style='color:green;'>Make a function that takes input, and gives output</p>
+    <p>Examples:</p>
+    <p class='code'>def feed_me(food):<br>
+      &nbsp;&nbsp;print "Okay, here is some " + food</p>
+    <p>and use it:</p>
+    <p class='code'>feed_me("bread")</p>
+    <p>"print" is used to immediately write strings back to you</p>
+    <p style='color:goldenrod'>In Python, the indentation, or spacing from the left on the second line, is important</p>
+  </div>
+
+  <div id='functions-repeat' class='step' data-x='2000' data-y='-120' data-z='300'>
+    <p>Functions are great for <em style='font-style:italic;'>repeating actions</em></p>
+    <p>make_circle()<br>make_square()<br>make_circle()<br>...</p>
+  </div>
+
   <div id='functions-6' class='step' data-x='1900' data-y='500'>
     <h4>Making our turtles move</h4>
     <p>We can tell our turtles to move around with these actions</p>
@@ -131,9 +169,16 @@
     <img src='assets/turtle_circle.png' />
   </div>
 
-  <div id='functions-exercise' class='step' data-x='1900' data-y='1000'>
+  <div id='turtles-setup' class='step' data-x='1900' data-y='1000'>
+    <h4>Setup</h4>
+    <p>1. Open a <span style='color:goldenrod'>terminal</span></p>
+    <p>2. Type <span style='color:green'>python</span> [enter]</p>
+    <p>3. Type <span class='code'>import turtle</span> [enter]</p>
+    <p>4. Type <span class=''>turtle.pendown()</span> [enter]</p>
+  </div>
+
+  <div id='functions-exercise' class='step' data-x='1900' data-y='1500'>
     <h4>Try it out!</h4>
-    <p class='instruction'>Double click 'My Turtle' on your blue desktop. When you see 'In [1]'' enter in a turtle action. Look at the screen!</p>
     <p class='code'>turtle.forward(10)</p>
     <p class='small'>Move foward 10 steps</p>
     <p class='code'>turtle.backward(5)</p>
@@ -148,7 +193,7 @@
     <p class='code'>turtle.pendown()</p>
     <p class='small'>Stop or start drawing</p>
   </div>
-
+<!--
   <div id='break' class='step break' data-x='1200' data-y='1000' data-rotate='90'>
     <h2>Break time</h2>
     <p>Let's have a snack to recharge :)</p>
@@ -160,7 +205,6 @@
     <p><em>I feel an evil prescence....</em></p>
   </div>
 
-  <!-- CHRIS' CONTENT -->
 
   <div id='lunch' class='step break' data-x='2000' data-y='-1800'>
     <h2>LUNCH!</h2>
@@ -284,7 +328,7 @@
   </ul>
   <p class='author'>Rebecca Putinski <a href="http://twitter.com/h4xnoodle">@h4xnoodle</a></p>
   </div>
-
+-->
 </div>  <!-- #impress -->
 
 <script src="assets/impress.js"></script>
