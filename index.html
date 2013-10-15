@@ -1,3 +1,8 @@
+<!-- ****************************
+  Content by Rebecca Putinski 
+  for Ladies Learning Code/Girls Learning Code 2013 
+************************* -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,17 +26,27 @@
     </div>
 
     <div id='intro-3' class='step slide' data-x='-100' data-y='-1200' data-z='40' data-rotate='90'>
-    <h3>What is programming?</h3>
+      <h3>What is programming?</h3>
       <ul>
-        <li>Using a programming language to create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
-        <li>Programming is everywhere (your computer right in front of you, the games you like to play, even your fridge! robots, space, etc)</li>
-        <li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
-        <li>Google uses python to make your searches fast</li>
-        <li>Movies like Finding Nemo have python code to help make the movie</li>
+        <li>Create instructions for computers to follow (eg. "please do one plus one" => 1+1)</li>
+        <li>Communicate with other software, and people</li>
+        <li>It's everywhere: your computer right in front of you, the games you like to play, even your fridge! robots, space, etc</li>
+        <li>Huge smartphone revolution: Apps.</li>
+        <li>"Software is eating the world"</li>
       </ul>
     </div>
 
-<!-- Algorithms -->
+    <div id='intro-4' class='step slide' data-x='-600' data-y='-1200' data-z='40' data-rotate='90'>
+      <h3>Python</h3>
+      <ul>
+        <li>Python is awesome because it enables programmers (like yourselves!) to create programs easily and quickly. </li>
+        <li>Is a great language to learn programming</li>
+        <li>Google uses Python to make your searches extra fast</li>
+        <li>Movies like Finding Nemo have Python code to help make the movie</li>
+      </ul>
+    </div>
+
+    <!-- Algorithms -->
 
     <div id='algorithms' class='step slide' data-x='-100' data-y='0'>
       <h2>Algorithms</h2>
@@ -40,255 +55,318 @@
       <p>Computers are not exactly "smart" like us, so we need to be very specific.</p>
     </div>
 
-    <div id='algos-2' class='step slide' data-x='-100' data-y='250'>
+    <div id='algos-2' class='step slide' data-x='-100' data-y='400'>
       <p>For example, what will happen if I tell a computer to 'make a sandwich'.</p>
       <p>What is a sandwich to a computer? What is bread? And so on...</p>
       <p>Each 'instruction' or 'command' must be very specific -- or precise.</p>
+      <p>Eg. Getting dressed in the morning, organising your desk.</p>
+      <p><strong>Goal orientated</strong></p>
     </div>
 
-    <div id='algos-3' class='step' data-x='-1300' data-y='-500'>
-      <h3>Chris, the computer.</h3>
-      <p>If Chris is a computer, then he can't exactly see. So we need to tell him exactly what to do!</p>
-      <p>"Chris, please walk forward by 5 small steps."</p>
+    <div id='algos-3' class='step' data-x='-100' data-y='900'>
+      <p>Algorithms start without code</p>
+      <p>Describes what happens with any input, and output</p>
+      <p>Translate to various programming languages</p>
       <img src='assets/cute_robot.jpg' />
     </div>
 
-    <div id='algos-4' class='step' data-x='300' data-y='-500'>
-      <h3>Now let's all try it</h3>
-      <p class='instruction'>Cover your eyes. You will just listen for instructions</p>
-      <p>Your teammates will help you through the maze. Listen for your name to get through!</p>
-      
+    <!-- Turtle graphics -->
+
+    <div id='turtles' class='step' data-x='1000' data-y='-1400'>
+      <h2>Turtles</h2>
+      <img src='assets/turtle.jpg' alt='Turtle' title='Turtle' />
+      <p>Let's play with some turtles</p>
+      <p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
     </div>
-    <div id='algos-5' class='step' data-x='300' data-y='-300'>
-      <h4 class='instruction'>You have now run an algorithm!</h4>
+
+    <div step='turtles-eg' class='step' data-x='1000' data-y='-1000'>
+      <h2>Quick demonstration</h2>
+      <img src='assets/turtle_circle.png' /> <img src='assets/turtle_forward_again.png' />
     </div>
 
+    <div id='functions-6' class='step' data-x='1000' data-y='-700'>
+      <h4>Making our turtles move</h4>
+      <p>We can tell our turtles to move around with these actions</p>
+    </div>
 
-<!-- Functions -->
+    <div id='turtles-move-pic' class='step' data-x='1000' data-y='-400' data-z='400'>
+      <img src='assets/turtle_forward.png' />
+      <img src='assets/turtle_right.png' />
+      <img src='assets/turtle_forward_again.png' />
+      <img src='assets/turtle_circle.png' />
+    </div>
 
-  <div id='turtles' class='step' data-x='1000' data-y='-1400'>
-    <h2>Turtles</h2>
-    <img src='assets/turtle.jpg' alt='Turtle' title='Turtle' />
-    <p>Let's play with some turtles</p>
-    <p>We are telling the turtle <em>exactly</em> what to do. She can't move on her own!</p>
-  </div>
+    <div id='turtles-setup' class='step' data-x='1000' data-y='-100' data-z='-100'>
+      <h4>To get started:</h4>
+      <p class='instruction'>Open a <strong>Terminal</strong> and type "python"</p>
+      <p class='instruction'>Type:</p>
+      <p class='code'>import turtle as t</p>
+      <p class='code'>t.forward(0)</p>
+      <p class='code'>t.shape("turtle")</p>
+      <p class='code'>t.color("green")</p>
+      <p class='code'>t.pencolor("black")</p>
+    </div>
 
-  <div step='turtles-eg' class='step' data-x='1000' data-y='-1000'>
-    <h2>Quick demonstration</h2>
-    <img src='assets/turtle_circle.png' /> <img src='assets/turtle_forward_again.png' />
-  </div>
+    <div id='turtles-move' class='step' data-x='1000' data-y='300'>
+      <h4>Draw something</h4>
+      <p class='code'>t.forward(10)</p>
+      <p class='code'>t.backward(5)</p>
+      <p class='code'>t.right(90)</p>
+      <p class='code'>t.left(90)</p>
+      <p class='code'>t.circle(50)</p>
+      <p class='code'>t.penup()</p>
+      <p class='code'>t.pendown()</p>
+      <div style='position:absolute;top:110px; right:70px;'>
+        <p class='code'>t.color("green")</p>
+        <p class='code'>t.pencolor("blue")</p>
+        <p class='code'>t.color([0.6, 0.2, 0.45])</p>
+        <p class='code'>t.pensize(10)</p>
+      </div>
+    </div>
 
-  <div id='functions' class='step' data-x='1700' data-y='-1100' data-rotate='90'>
-    <h3>Functions</h3>
-    <p>What is a function?</p>
-    <p>A function is an <strong>action</strong> that takes <strong>input</strong> and gives you <strong>output</strong>.</p>
-    <p>Sometimes <strong>input</strong> and <strong>output</strong> could be nothing!</p>
-  </div>
+    <!-- Variables & Types -->
 
-  <div id='functions-2' class='step' data-x='2000' data-y='-1100' data-rotate='90'>
-    <p>Using a function in Python looks like this:</p>
-    <p class='code'>my_cool_function(<strong>INPUT</strong>)</p>
-    <p>The <strong>OUTPUT</strong> is sometimes nothing, a number, a word, or an action on something.</p>
-  </div>
+    <div id='types' class='step' data-x='1000' data-y='1200' data-rotate='45'>
+      <h2>Data Types</h2>
+      <p>Today we will see:</p>
+      <p class='code'>Numbers (integers, floating point)</p>
+      <p class='code'>Strings</p>
+      <p>A number is what you'd expect; e.g.: 5, 10.3, 141.242, 1337</p>
+      <p>A string are characters/words/sentences; e.g.: "hello world" "girls rule"</p>
+      <p>Remember the quotes for strings!</p>
+    </div>
 
-  <div id='functions-3' class='step' data-x='1870' data-y='-1100' data-rotate='90' data-z='100'>
-    <p class='question'>For turtles, what kind of <strong>actions</strong> did you see?</p>
-  </div>
+    <div id='types-convert' class='step' data-x='700' data-y='1500' data-rotate='45'>
+      <h4>Converting types</h4>
+      <p>Sometimes we need to convert between numbers and strings</p>
+      <p class='code'>str(1337) => "1337"</p>
+      <p class='code'>int("4") => 4</p>
+      <p class='code'>int("4.5") error!</p>
+      <p class='code'>float("4.5") => 4.5</p>
+      <p class='code'>print "hello number " + str(4)</p>
+    </div>
 
-  <div id='functions-4' class='step' data-x='1900' data-y='-500'>
-    <h4>In Python, we can use actions in two ways:</h4>
-    <p>Making the action happen on something (eg. a cute turtle):</p>
-    <p class='code'>turtle.forward();</p>
-    <img src='assets/turtle.jpg' />
-    <div class='line'></div>
-  </div>
+    <div id='variables' class='step' data-x='400' data-y='1800' data-rotate='45'>
+      <h2>Variables</h2>
+      <p>Just like algebra in math class</p>
+      <p class='code'>x = 1337</p>
+      <p class='code'>print x</p>
+      <p class='code'>x = "hello, what's up"</p>
+      <p class='code'>print x</p>
+      <p>Useful to store large numbers/strings</p>
+    </div>
 
-  <div id='functions-5' class='step' data-x='1900' data-y='100'>
-    <p>What does this function do?</p>
-    <p class='code'>times_two(2)</p>
-    <p class='code'>&gt;&gt;&gt; 4</p>
-    <p>What is the input and output here?</p>
-    <p class='note'>Input is 2, output is 4</p>
-    <p>It takes the <strong>INPUT</strong> (the number two) and multiplies it by two. The <strong>OUTPUT</strong> is 4.</p>
-  </div>
+    <!-- Functions -->
 
-  <div id='functions-def' class='step' data-x='2200' data-y='-70' data-z='-400'>
-    <h4>Make a function</h4>
-    <p class='code'>def times_two(number):<br>
-      &nbsp;&nbsp;return number * 2</p>
-    <p>'return' means to give back the <strong>output</strong></p>
-  </div>
+    <div id='functions' class='step' data-x='1700' data-y='-1100' data-rotate='90'>
+      <h2>Functions</h2>
+      <p>A function is an <strong>action</strong> that takes <strong>input</strong> and gives you <strong>output</strong>.</p>
+      <p>Sometimes <strong>input</strong> and <strong>output</strong> could be nothing!</p>
+    </div>
 
-  <div id='functions-6' class='step' data-x='1900' data-y='500'>
-    <h4>Making our turtles move</h4>
-    <p>We can tell our turtles to move around with these actions</p>
-  </div>
+    <div id='functions-2' class='step' data-x='2000' data-y='-1100' data-rotate='90'>
+      <p>Using a function in Python looks like this:</p>
+      <p class='code'>my_cool_function(<strong>INPUT</strong>)</p>
+      <p>The <strong>OUTPUT</strong> is sometimes nothing, a number, a word, or an action on something.</p>
+    </div>
 
-  <div id='turtles-move' class='step' data-x='1800' data-y='500' data-z='400'>
-    <img src='assets/turtle_forward.png' />
-    <img src='assets/turtle_right.png' />
-    <img src='assets/turtle_forward_again.png' />
-    <img src='assets/turtle_circle.png' />
-  </div>
+    <div id='functions-3' class='step' data-x='1870' data-y='-1100' data-rotate='90' data-z='100'>
+      <p class='question'>For the turtles, what kind of <strong>actions</strong> did you see?</p>
+    </div>
 
-  <div id='functions-exercise' class='step' data-x='1900' data-y='1000'>
-    <h4>Try it out!</h4>
-    <p class='instruction'>Double click 'My Turtle' on your blue desktop. When you see 'In [1]'' enter in a turtle action. Look at the screen!</p>
-    <p class='code'>turtle.forward(10)</p>
-    <p class='small'>Move foward 10 steps</p>
-    <p class='code'>turtle.backward(5)</p>
-    <p class='small'>Move back 5 steps</p>
-    <p class='code'>turtle.right(90)</p>
-    <p class='small'>Rotate clockwise by 90 degrees</p>
-    <p class='code'>turtle.left(90)</p>
-    <p class='small'>Rotate counter-clockwise by 90 degrees</p>
-    <p class='code'>turtle.circle(50)</p>
-    <p class='small'>Make a circle</p>
-    <p class='code'>turtle.penup()</p>
-    <p class='code'>turtle.pendown()</p>
-    <p class='small'>Stop or start drawing</p>
-  </div>
+    <div id='functions-4' class='step' data-x='1900' data-y='-500'>
+      <h4>In Python, we can use functions in two ways:</h4>
+      <p>Making the 'action' happen on something (eg. a cute turtle):</p>
+      <p class='code'>turtle.forward();</p>
+      <img src='assets/turtle.jpg' />
+      <div class='line'></div>
+    </div>
 
-  <div id='break' class='step break' data-x='1200' data-y='1000' data-rotate='90'>
-    <h2>Break time</h2>
-    <p>Let's have a snack to recharge :)</p>
-    <img src='assets/snacks.jpg' />
-    <p>Python and Minecraft on<br>tiny computers! <a href="http://www.raspberrypi.org/archives/3445">Videos</a>
-  </div>
+    <div id='functions-5' class='step' data-x='1900' data-y='100'>
+      <p>Take input and give ouput:</p>
+      <p class='code'>times_two(2)</p>
+      <p class='code'>&gt;&gt;&gt; 4</p>
+      <p>What is the input and output here?</p>
+      <p class='note'>Input is 2, output is 4</p>
+      <p>It takes the <strong>INPUT</strong> (the number two) and multiplies it by two. The <strong>OUTPUT</strong> is 4.</p>
+    </div>
 
-  <div id='memory' class='step' data-x='2000' data-y='-2000'>
-    <p><em>I feel an evil prescence....</em></p>
-  </div>
+    <div id='functions-def' class='step' data-x='2200' data-y='-70' data-z='-400'>
+      <h4>Make a function</h4>
+      <p class='code'>def times_two(number):<br>
+        &nbsp;&nbsp;return number * 2</p>
+        <p>or</p>
+      <p class='code'>def lunch_time(bread, filling):<br>
+        &nbsp;&nbsp;return "For lunch I'm having a " + bread + " bread sandwich and awesome " + filling + " in it"</p>  
+      <p>'return' means to give back the <strong>output</strong></p>
+    </div>
 
-  <!-- CHRIS' CONTENT -->
+    <div id='functions-usefulness' class='step' data-x='2200' data-y='500' data-z='-400'>
+      <h4>Homework Help</h4>
+      <p>Use functions to help with your math/science homework</p>
+      <p class='code'>import math</p>
+      <p class='code'>math.sinx(90)</p>
+      <p class='code'>math.hypot(x, y)</p>
+      <p class='code'>math.pi</p>
+      <p>Useful to write one function that will be used a few times</p>
+    </div>
 
-  <div id='lunch' class='step break' data-x='2000' data-y='-1800'>
-    <h2>LUNCH!</h2>
-  </div>
+    <!-- Turtles + functions -->
 
-  <div id='control-flow' class='step' data-x='2800' data-y='-1800'>
-    <h2>Decision Making</h2>
-    <p>The key part to many things in life and in programming are the decisions we make.</p>
-    <p>With computers, there is a <strong class='condition'>condition</strong> and there are different things we do</p>
-  </div>
+    <div id='lunch' class='step break' data-x='1200' data-y='1000' data-rotate='90'>
+      <h2>Lunch time</h2>
+      <p>Let's have our lunches<br> to recharge :)</p>
+      <img src='assets/snacks.jpg' />
+      <!-- <p>Python and Minecraft on<br>tiny computers! <a href="http://www.raspberrypi.org/archives/3445">Videos</a> -->
+    </div>
 
-  <div id='control-flow-2' class='step' data-x='2800' data-y='-1300'>
-    <p class='control code'>if <span class='condition'>you are finished dinner</span>:<br>
-    &nbsp;&nbsp;<span class='decision'>you can have dessert</span><br>
-    else:<br>
-    &nbsp;&nbsp;<span class='decision'>you need to finish your dinner first</span></p>
-  </div>
+    <div id='control-flow' class='step' data-x='3500' data-y='-1800'>
+      <h2>Decision Making</h2>
+      <p>The key part to many things in life and in programming are the decisions we make.</p>
+      <p>With computers, there is a <strong class='condition'>condition</strong> and there are different things we do, depending on what's being asked</p>
+      <p>'if statements' or 'conditional statements'</p>
+    </div>
 
-  <div id='control-flow-3' class='step' data-x='2800' data-y='-800'>
-    <p class='control code'>if <span class='condition'>you have taken off your shoes</span>:<br>
-    &nbsp;&nbsp;<span class='decision'>you can enter the house</span><br>
-    else:<br>
-    &nbsp;&nbsp;<span class='decision'>please take off your shoes!</span></p>
-  </div>
+    <div id='control-flow-2' class='step' data-x='3500' data-y='-1300'>
+      <p class='control code'>if <span class='condition'>you are finished dinner</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>you can have dessert</span><br>
+      else:<br>
+      &nbsp;&nbsp;<span class='decision'>you need to finish your dinner first</span></p>
+    </div>
 
-  <div id='control-flow-4' class='step' data-x='2800' data-y='-400'>
-    <p>The <strong class='condition'>condition</strong> would be "<span class='condition'>you are finished dinner</span>" which could be "yes" or "no", which in computer-speak is called <strong class='green'>TRUE</strong> and <strong class='red'>FALSE</strong>. 
+    <div id='control-flow-3' class='step' data-x='3500' data-y='-800'>
+      <p class='control code'>if <span class='condition'>you have taken off your shoes</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>you can enter the house</span><br>
+      elif <span class='condition'>you are wearing one shoe</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>take off the other shoe!</span><br>
+      else:<br>
+      &nbsp;&nbsp;<span class='decision'>please take off your shoes!</span></p>
+    </div>
 
-    <p class='control code'>if <span class='condition'>an apple is brown</span>:<br>
-    &nbsp;&nbsp;<span class='decision'>don't eat it!</span><br>
-    else:<br>
-    &nbsp;&nbsp;<span class='decision'>eat it!</span></p>
-  </div>
+    <div id='control-flow-4' class='step' data-x='3500' data-y='-400'>
+      <p>The <strong class='condition'>condition</strong> would be "<span class='condition'>you are finished dinner</span>" which could be "yes" or "no", which in computer-speak is called <strong class='green'>TRUE</strong> and <strong class='red'>FALSE</strong>. 
 
-  <div id='control-flow-5' class='step' data-x='2800' data-y='100'>
-    <h4>For a computer with Python</h4>
-    <p>The <strong>variable</strong> apple stores which colour it is.</p>
-    <p class='code control'>if <span class='condition'>apple == "brown"</span>:<br>
-    &nbsp;&nbsp;<span class='decision'>print "Don't eat it!"</span><br>
-    else:<br>
-    &nbsp;&nbsp;<span class='decision'>print "Eat it!"</span></p>
-    <p class='question  '>What would happen if the apple variable was instead:</p>
-    <p class='code'>apple = "green"</p>
-    <p class='code'>apple = "purple"</p>
-  </div>
+      <p class='control code'>if <span class='condition'>an apple is brown</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>don't eat it!</span><br>
+      elif <span class='condition'>an apple is purple</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>probably shouldn't eat it, it's purple.</span><br>
+      else:<br>
+      &nbsp;&nbsp;<span class='decision'>eat it!</span></p>
+    </div>
 
-  <div id='control-flow-6' class='step important' data-x='2800' data-y='600'>
-    <p class='important'>Spacing is important in Python! We use two spaces to tell the difference between "if" and the decision we made.</p>
-    <p>Remember that one equals sign (=) means to <em>give a value to a variable</em>. Two equals signs (==) means <em>we are checking if the two things are the same</em></p>
-  </div>
+    <div id='control-flow-5' class='step' data-x='3500' data-y='100'>
+      <h4>For a computer with Python</h4>
+      <p>The <strong>variable</strong> 'apple' stores which colour it is.</p>
+      <p class='code control'>if <span class='condition'>apple == "brown"</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>print "Don't eat it!"</span><br>
+      elif <span class='condition'>apple == "purple"</span>:<br>
+      &nbsp;&nbsp;<span class='decision'>print "Probably shouldn't eat it, it's purple."</span><br>
+      else:<br>
+      &nbsp;&nbsp;<span class='decision'>print "Eat it!"</span></p>
+      <p class='question'>What would happen if the apple variable was:</p>
+      <p class='code'>apple = "brown"</p>
+      <p class='code'>apple = "green"</p>
+      <p class='code'>apple = "purple"</p>
+    </div>
 
-  <div id='control-flow-game' class='step' data-x='3000' data-y='400' data-rotate='90' data-z='1000'>
-    <h3>Stand up if....</h3>
-    <p>Stand up if the <strong>condition</strong> about you is <strong>TRUE</strong></p>
-  </div>
+    <div id='control-flow-6' class='step important' data-x='3500' data-y='600'>
+      <p class='important'>Spacing is important in Python! We use two spaces to tell the difference between "if" and the decision we made.</p>
+      <p>One equals sign (=) means to <em>give a value to a variable</em>. Two equals signs (==) means <em>we are checking if the two things are the same</em></p>
+    </div>
 
-  <div id='loops' class='step' data-x='2800' data-y='1200'>
-    <h3>Loops</h3>
-    <p>Loops allow you to write a small amount of code and have it run many times.</p>
-    <p>Like 'if' and 'else', a <strong>while</strong> loop uses a <strong>condition</strong></p>
-    <p class='code'>while <span class='condition'>condition</span>:<br>
-      <span class='decision'>&nbsp;&nbsp;do something cool</span></p>
-    <p>This is the while loop. Read it like this:</p>
-    <p>While the condition is TRUE, do something cool.</p>
-    <p class='question'>Can you think of other examples?</p>
-  </div>
+    <div id='control-flow-game' class='step' data-x='3700' data-y='400' data-rotate='90' data-z='1000'>
+      <h3>Stand up if....</h3>
+      <p>Stand up if the <strong>condition</strong> about you is <strong>TRUE</strong></p>
+    </div>
 
-  <div id='loops-2' class='step' data-x='2800' data-y='1800'>
-    <p>What if we know exactly how many times we want to "do something cool"?</p>
-    <p class='code'>for <span class='condition'>count in range(5)</span>:<br>
-      <span class='decision'>&nbsp;&nbsp;print count</span></p>
-    <p>You can read aloud like this:</p>
-    <p>For exactly 5 times, 'count' is assigned the value of the current time we are running the loop. We then print the current value of 'count'.</p> 
-    <p class='question'>What do you think the output is?</p>
-    <p>range(5) means that 'count' will get the value of 0, then 1, then 2... then 4.</p>
-  </div>
+    <div id='loops' class='step' data-x='3500' data-y='1200'>
+      <h3>Loops</h3>
+      <p>Loops allow you to write a small amount of code and have it run many times.</p>
+      <p>Like 'if' and 'else', a <strong>while</strong> loop uses a <strong>condition</strong></p>
+      <p class='code'>while <span class='condition'>condition</span>:<br>
+        <span class='decision'>&nbsp;&nbsp;do something cool</span></p>
+      <p>This is the while loop. Read it like this:</p>
+      <p>While the condition is TRUE, do something cool.</p>
+      <p class='question'>Can you think of other examples?</p>
+    </div>
 
-  <div id='loops-3' class='step' data-x='2800' data-y='2300'>
-    <p>When you really want cake but you need to eat three servings of vegetables first...</p>
-    <p class='code'>times_ate_veggies = 3<br>while <span class='condition'>times_ate_veggies &gt; 0:</span><br>
-      <span class='decision'>&nbsp;&nbsp;print "Eating my vegetables..."</span><br>
-      <span class='decision'>&nbsp;&nbsp;times_ate_veggies = times_ate_veggies - 1</span><br>
-      print "I can have cake now!"</p>
-      <p>Remember the spaces!</p>
-      <p>"&gt;" means "greater than". Example: <span class='condition'>5 > 2?</span> asks: "Is 5 greater than 2?"</p>
-  </div>
+    <div id='loops-2' class='step' data-x='3500' data-y='1800'>
+      <p>What if we know exactly how many times we want to "do something cool"?</p>
+      <p class='code'>for <span class='condition'>count in range(5)</span>:<br>
+        <span class='decision'>&nbsp;&nbsp;print count</span></p>
+      <p>You can read aloud like this:</p>
+      <p>For exactly 5 times, the variable 'count' is given the value of the current iteration (or time) we are running the loop. We then print the value of 'count'.</p>
+      <p>range(5) means that 'count' will get the value of 0, then 1, then 2... then 4.</p>
+      <p class='question'>What do you think the output is?</p>
+    </div>
 
-  <div id='recap' class='step' data-x='2800' data-y='2900'>
-    <h2>Let's use everything we've learned</h2>
-    <p>Variables</p>
-    <p>Functions</p>
-    <p>Strings</p>
-    <p>Print</p>
-    <p>Algorithm</p>
-    <p>If and Else</p>
-    <p>While loop</p>
-    <p>For loop</p>
-  </div>
+    <div id='loops-3' class='step' data-x='3500' data-y='2300'>
+      <p>When you really want cake but you need to eat three servings of vegetables first...</p>
+      <p class='code'>times_ate_veggies = 3<br>while <span class='condition'>times_ate_veggies &gt; 0:</span><br>
+        <span class='decision'>&nbsp;&nbsp;print "Eating my vegetables..."</span><br>
+        <span class='decision'>&nbsp;&nbsp;times_ate_veggies = times_ate_veggies - 1</span><br>
+        print "I can have cake now!"</p>
+        <p>Remember the spaces!</p>
+        <p>"&gt;" means "greater than". Example: <span class='condition'>5 > 2?</span> asks: "Is 5 greater than 2?"</p>
+    </div>
 
-  <div id='grid' class='step' data-x='3800' data-y='-1000'>
-    <h2>Block by Block</h2>
-    <p>Now that we have the power of 'if' and 'else', and the loop, we can use them</p>
-    <p>These three new terms are the most important part of big programs (like minecraft!)</p>
-    <p class='instruction'>Double click on Smiley on your desktop</p>
-  </div>
+    <div id='input' class='step' data-x='3500' data-y='2800' data-z='100'>
+      <h2>Asking for Input</h2>
+      <p>Programs sometimes ask the user for input</p>
+      <p class='code'>raw_input("What is your favourite colour?")</p>
+      <p>Save the answer to a variable for later or to print it</p>
+      <p class='code'>answer = raw_input("What is your favourite colour?")</p>
+      <p>The program then pauses to wait for the answer</p>
+      <p>Any 'answer' you get back is always a string</p>
+    </div>
 
-  <div id='grid-2' class='step' data-x='3800' data-y='-400'>
-    <p>That was just a small example. Let's make something prettier!</p>
-    <p class='instruction'>Try making the grid bigger, making different colours, draw a nice picture!</p>
-    <img src="assets/grid_row_col.png" />
-    <p class='instruction'>Open Coloured Blocks on your desktop</p>
-  </div>
+    <div id='recap' class='step' data-x='3500' data-y='3400'>
+      <h2>Let's use everything we've learned</h2>
+      <p>Variables</p>
+      <p>Functions</p>
+      <p>Strings</p>
+      <p>Print</p>
+      <p>Algorithm</p>
+      <p>If and Else</p>
+      <p>While loop</p>
+      <p>For loop</p>
+      <p>Input</p>
+    </div>
 
-  <div id='owari' class='step' data-x='3800' data-y='300'>
-  <h2>Thanks for coming today!!</h2>
-  <p>Want to learn more?</p>
-  <ul>
-    <li>Python Monk <a href="http://pythonmonk.com">http://pythonmonk.com</a></li>
-    <li>CodeAcademy <a href="http://codeacademy.com">http://codeacademy.com</a></li>
-    <li>Hacking Minecraft<br><a href='http://www.raspberrypi.org/archives/3445'>http://www.raspberrypi.org/archives/3445</a></li>
-  </ul>
-  <p class='author'>Rebecca Putinski <a href="http://twitter.com/h4xnoodle">@h4xnoodle</a></p>
-  </div>
+    <!-- String based game -->
 
-</div>  <!-- #impress -->
+    <div id='game' class='step' data-x='4500' data-y='1200'>
+      <h2>Choose your own adventure</h2>
+      <p>Provide a fun adventure for the player</p>
+      <p>For each question, the user can pick from a few choices:</p>
+      <p class='code'>direction = raw_input("What direction to travel? (north, west, east, south): ")</p>
+      <p>Use <span class='condition'>if statements</span> to change the game based on the players' choices</p>
+      <br>
+      <p class='code'>if <span class='condition'>direction == "east"</span>:<br>
+        &nbsp;&nbsp;<span class='decision'>print "You have entered a scary cave..."<br>
+        &nbsp;&nbsp;choice = raw_input("Pick up the treasure? (yes, no): ")</span><br>
+        else:<br>
+        &nbsp;&nbsp;<span class='decision'>print "Nothing to see here... moving on to the polkadot plant field ahead"
+        &nbsp;&nbsp;print "You see a cool piece of string on the ground"
+        &nbsp;&nbsp;choice = raw_input("Pick it up? (yes, no): ")</span>
+      </p>
+    </div>
 
-<script src="assets/impress.js"></script>
-<script>impress().init();</script>
+    <div id='owari' class='step' data-x='7000' data-y='800'>
+    <h2>Thanks for coming today!!</h2>
+    <p>Want to learn more?</p>
+    <ul>
+      <li>Python Monk <a href="http://pythonmonk.com">http://pythonmonk.com</a></li>
+      <li>CodeAcademy <a href="http://codeacademy.com">http://codeacademy.com</a></li>
+      <li>Hacking Minecraft<br><a href='http://www.raspberrypi.org/archives/3445'>http://www.raspberrypi.org/archives/3445</a></li>
+      <li><a href='http://docs.python.org/2.7/'>Python documentation</a>
+    </ul>
+    <p class='author'>Rebecca Putinski <a href="http://twitter.com/h4xnoodle">@h4xnoodle</a></p>
+    </div>
 
+  </div> <!-- #impress -->
+
+  <script src="assets/impress.js"></script>
+  <script>impress().init();</script>
 </body>
 </html>
